@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      const redirects = {
+"windshield_fluid_brands": "https://lvnta.com/lv_DMjKDhMRfGJnkLcGVc",
+"whats_the_best_cooling_pillow": "https://lvnta.com/lv_MNfY2epNMeNXdgm7Qy",
+"which_water_purifier_filtration_system": "https://lvnta.com/lv_dzFdEybtfvr9jJh0Db",
+"what_company_makes_the_best": "https://lvnta.com/lv_qfHhmjgrLVhbSpETm3",
+"good_ceramic_pans_or_other": "https://lvnta.com/lv_BNm2WjUH32PsvgVGjS",
+"does_bioma_work_for_weight": "https://lvnta.com/lv_7XixOF7Wliwy0a3PeG",
+"best_home_distillation": "https://lvnta.com/lv_d6lbBbmd9SvSk1leWk",
+"most_effective_anti_tracking_litter": "https://lvnta.com/lv_7niOSV2FYAwQbgwtuK",
+"best_scar_fading_cream_oil": "https://lvnta.com/lv_2TV44YIteC5NKwKK7q",
+"best_cooling_sheets": "https://lvnta.com/lv_UEcwZIg3osOnYIkkFO?url=https%3A%2F%2Famazon.com%2Fdp%2FB07BGVGFFF",
+"what_are_the_best_sunscreens": "https://lvnta.com/lv_1wiBIWX4lS5c1E4Syd?url=https%3A%2F%2Famazon.com%2Fdp%2FB087H5FFGK",
+"my_top_earbud_picks_of": "https://lvnta.com/lv_iNCDYutDv8G4mPix7Q",
+"best_iphone_charger": "https://lvnta.com/lv_LsWO5ifQ353QuEwKAS",
+"whats_the_best_eyelash_curler": "https://lvnta.com/lv_3JcI1Yfd3dq3SevYMI",
+"best_foundation_for_aging_skin": "https://lvnta.com/lv_9LXQHPObu2ndwYRRQh?url=https%3A%2F%2Famazon.com%2Fdp%2FB0BRBKBYZG",
+"what_is_this_product_shes": "https://lvnta.com/lv_dutbtk4ym8ATzmtqgT",
+"best_full_coverage_foundation": "https://lvnta.com/lv_r6pe53IjWOOojDQxDA",
+"the_best_foundation_for_oily": "https://lvnta.com/lv_uX0xNbRo8C1Bt2S0Ny",
+"good_insole_for_standing_all": "https://lvnta.com/lv_OK3OTKE1Mt7ZkCGvWU",
+"small_coolers_good_at_retaining": "https://lvnta.com/lv_CA7AwBGatfDnv0qJRP?url=https%3A%2F%2Famazon.com%2Fdp%2FB08V3YJQ15"
+      };
+
+      function getParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+
+      const key = getParam("to");
+      const url = redirects[key?.toLowerCase()];
+
+      if (url) {
+        window.location.replace(url);
+      } else {
+        document.write("<h2>Redirect not found</h2><p>Use ?to=shortname</p>");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
